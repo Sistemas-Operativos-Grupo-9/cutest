@@ -284,6 +284,7 @@ void CuSuiteAddSuite(CuSuite* testSuite, CuSuite* testSuite2)
 		CuTest* testCase = testSuite2->list[i];
 		CuSuiteAdd(testSuite, testCase);
 	}
+	free(testSuite2);
 }
 
 void CuSuiteRun(CuSuite* testSuite)
